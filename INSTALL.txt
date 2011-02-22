@@ -1,0 +1,14 @@
+Dependencies
+============
+    * Python (2.6 or later)
+    * SWIG (1.3.29 or later)
+    * pygame (1.7 or later)
+    * OpenGL (headers and dev libs) 
+
+On Windows, you need to copy the OpenGL files to the winbuild folder in the Opioid2D distribution. Copy headers so that you'll have the subfolder "GL" under winbuild\include, all .lib files under winbuild\lib and all DLLs under winbuild\dlls.
+
+
+Building the Extension
+======================
+    * Run run_swig.bat on Windows or run_swig.sh under Linux/OSX
+    * Run setup.py install 

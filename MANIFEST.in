@@ -1,0 +1,31 @@
+include *.txt
+include setup.py
+include MANIFEST.in
+include run_swig.*
+include mingw_*.bat
+
+recursive-include include *.hpp
+recursive-include pyimpl *.py *.png *.ico
+recursive-include src *.cpp
+recursive-include swig *.i
+recursive-include test *.py *.png
+recursive-include examples *.py *.png
+
+prune */.svn/*
+prune .svn/*
+prune tests/*
+prune swig_dist/*
+prune pyimpl/cOpioid2D.py
+prune examples/shmup/*
+
+prune notes/*
+
+prune examples/invaders/invadersgfx/bg.png
+prune */pypack.tmp/*
+include examples/invaders/invadersgfx/bg.jpg
+include test/*.o2f
+
+include swig_dist/empty_dir
+include winbuild/dlls/copy_dlls_here
+include winbuild/include/copy_headers_here
+include winbuild/lib/copy_lib_files_here

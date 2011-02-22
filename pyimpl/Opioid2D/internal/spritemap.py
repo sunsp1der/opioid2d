@@ -1,0 +1,2 @@
+
+SpriteMapper = None
